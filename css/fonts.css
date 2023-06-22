@@ -1,0 +1,100 @@
+@font-face {
+    font-family: Montserrat;
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+    src: local(Montserrat), 
+        url(../fonts/Montserrat-ExtraBold.woff2) format('woff2'),
+        url(../fonts/Montserrat-ExtraBold.woff) format('woff'),
+        url(../fonts/Montserrat-ExtraBold.eot) format('eot');
+}
+@font-face {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+    src: local(Montserrat), 
+        url(../fonts/Montserrat-Bold.woff2) format('woff2'),
+        url(../fonts/Montserrat-Bold.woff) format('woff'),
+        url(../fonts/Montserrat-Bold.eot) format('eot');
+}
+@font-face {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+    src: local(Montserrat), 
+        url(../fonts/Montserrat-SemiBold.woff2) format('woff2'),
+        url(../fonts/Montserrat-SemiBold.woff) format('woff'),
+        url(../fonts/Montserrat-SemiBold.eot) format('eot');
+}
+@font-face {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+    src: local(Montserrat), 
+        url(../fonts/Montserrat-Medium.woff2) format('woff2'),
+        url(../fonts/Montserrat-Medium.woff) format('woff'),
+        url(../fonts/Montserrat-Medium.eot) format('eot');
+}
+@font-face {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    src: local(Montserrat), 
+        url(../fonts/Montserrat-Regular.woff2) format('woff2'),
+        url(../fonts/Montserrat-Regular.woff) format('woff'),
+        url(../fonts/Montserrat-Regular.eot) format('eot');
+}
+@font-face {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+    src: local(Montserrat), 
+        url(../fonts/Montserrat-Italic.woff2) format('woff2'),
+        url(../fonts/Montserrat-Italic.woff) format('woff'),
+        url(../fonts/Montserrat-Italic.eot) format('eot');
+}
+@font-face {
+    font-family: Montserrat;
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+    src: local(Montserrat), 
+        url(../fonts/Montserrat-Light.woff2) format('woff2'),
+        url(../fonts/Montserrat-Light.woff) format('woff'),
+        url(../fonts/Montserrat-Light.eot) format('eot');
+}
+@font-face {
+    font-family: Inter;
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+    src: local(Inter), 
+        url(../fonts/Inter-SemiBold.woff2) format('woff2'),
+        url(../fonts/Inter-SemiBold.woff) format('woff'),
+        url(../fonts/Inter-SemiBold.eot) format('eot');
+}
+@font-face {
+    font-family: Inter;
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+    src: local(Inter), 
+        url(../fonts/Inter-Medium.woff2) format('woff2'),
+        url(../fonts/Inter-Medium.woff) format('woff'),
+        url(../fonts/Inter-Medium.eot) format('eot');
+}
+@font-face {
+    font-family: Inter;
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+    src: local(Inter), 
+        url(../fonts/Inter-ExtraBold.woff2) format('woff2'),
+        url(../fonts/Inter-ExtraBold.woff) format('woff'),
+        url(../fonts/Inter-ExtraBold.eot) format('eot');
+}
