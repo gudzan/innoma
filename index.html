@@ -11,12 +11,54 @@
 </head>
 
 <body>
+    <div class="overlay"></div>
+    <div class="autorisation">
+        <div class="autorisation__wrap">
+            <form>
+                <div class="autorisation__title">Вход</div>
+                <div class="autorisation__input-box">
+                    <input class="autorisation__email" type="email" name="email" id="form-email" placeholder="Е-маил"
+                        required>
+                    <input class="autorisation__password" type="password" name="password" id="form-password"
+                        placeholder="Пароль" required>
+                </div>
+                <input class="autorisation__button button button--green" type="submit" value="Вход">
+                <a href="" class="autorisation__register">Зарегистрироваться</a>
+            </form>
+        </div>
+    </div>
     <header class="header">
-        <div class="burger"></div>
-        <div class="wrap">
-            <div class="header__top"></div>
-            <div class="header__body"></div>
-        </вшм>
+        <div class="header__background">
+            <div class="wrap">
+                <div class="header__top">
+                    <a class="header__logo logo">INNOMA.<span>VC</span></a>
+                    <ul class="header__menu-list menu">
+                        <li class="header__menu-item menu__item"><a class="menu__item-link">Кто мы?</a></li>
+                        <li class="header__menu-item menu__item"><a class="menu__item-link">Услуги</a></li>
+                        <li class="header__menu-item menu__item"><a class="menu__item-link">Акселератор</a></li>
+                        <li class="header__menu-item menu__item"><a class="menu__item-link">Новости</a></li>
+                    </ul>
+                    <div class="header__top-button-box"><button
+                            class="header__top-button button button--green">Войти</button>
+                        <a class="burger"></a>
+                    </div>
+                </div>
+
+                <div class="header__body">
+                    <h1 class="header__body-title">Запустите
+                        <br><span>технологический <span class="header__body-title-hidden">IT-</span>бизнес</span>
+                        <br>на международных рынках
+                    </h1>
+                    <div class="header__body-text header__body-text--desktop">Открыт набор заявок на акселератор</div>
+                    <div class="header__body-text header__body-text--mobile">Старт ближайшего<wbr> акселератора
+                        <span class="header__body-text--decoration">15.12.2022</span>
+                    </div>
+                    <div class="header__body-button-box"><button
+                            class="header__body-button button button--gradient-blue">Подать заявку</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
     <main>
         <section class="first-section white-section">
@@ -70,5 +112,9 @@
         </section>
     </main>
     <footer class="footer"></footer>
+
 </body>
+
+<script src="js/main.js"></script>
+
 </html>

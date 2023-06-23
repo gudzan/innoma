@@ -1,0 +1,62 @@
+color-block
+picture-block
+white-block
+button
+button--blue
+button--green
+
+Заголовок h1 большой белый текст (header-big-white-text)
+color: #FFF;
+font-size: 43px;
+font-family: Montserrat;
+font-weight: 700;
+line-height: 59.5px;
+text-transform: uppercase;
+
+Залоговок h2 
+color: #1178B2;
+font-size: 36px;
+font-family: Montserrat;
+font-weight: 700;
+line-height: 80px;
+
+Заголовок h3
+color: #1178B2;
+font-size: 24px;
+font-family: Inter;
+font-weight: 600;
+
+body-black-text
+color: #000;
+font-size: 20px;
+font-family: Montserrat;
+font-weight: 300;
+line-height: 30px;
+
+
+https://vimeo.com/812396602
+
+<iframe src="https://player.vimeo.com/video/812396602?h=1d4fa35d38" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+<p><a href="https://vimeo.com/812396602">Как создать презентацию стартапа с помощью ИИ?</a> from <a href="https://vimeo.com/innoma">INNOMA.VC</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
+
+
+
+
+
+
+Montserrat ExtraBold 800
+Montserrat Bold 700
+Montserrat SemiBold 600
+Montserrat Medium 500
+Montserrat Regular 400
+Montserrat Light 300
+Montserrat Italic ??
+
+Inter Medium 500
+Inter Semi Bold 600
+Inter Extra Bold 800
+
+
+
+@media (max-width:630px) {}
