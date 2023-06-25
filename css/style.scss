@@ -13,30 +13,34 @@ body {
     line-height: 80px;
 }
 
+.body-not-scroll {
+    overflow: hidden;
+}
+
 .autorisation {
     position: fixed;
     visibility: hidden;
     display: none;
-    top:30%;
-    left:30%;
+    top: 30%;
+    left: 30%;
     background-color: #FFF;
     z-index: 300;
     border-radius: 5px;
 }
-.autorisation__wrap {
-}
-.autorisation__title {
-}
-.autorisation__input-box {
-}
-.autorisation__email {
-}
-.autorisation__password {
-}
-.autorisation__button {
-}
-.autorisation__register {
-}
+
+.autorisation__wrap {}
+
+.autorisation__title {}
+
+.autorisation__input-box {}
+
+.autorisation__email {}
+
+.autorisation__password {}
+
+.autorisation__button {}
+
+.autorisation__register {}
 
 .header {
     background: url(../image/header/header.jpg) 60% 50% / cover no-repeat;

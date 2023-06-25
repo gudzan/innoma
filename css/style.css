@@ -6,6 +6,10 @@ body {
   line-height: 80px;
 }
 
+.body-not-scroll {
+  overflow: hidden;
+}
+
 .autorisation {
   position: fixed;
   visibility: hidden;
