@@ -3,6 +3,7 @@ $regular-green: #07AF91;
 $logo-color: #00B1E9;
 $button-blue: #016CA8;
 $button-light-blue: #61B5E4;
+$light-grey: #F1F1F1;
 
 
 body {
@@ -19,28 +20,74 @@ body {
 
 .autorisation {
     position: fixed;
-    visibility: hidden;
-    display: none;
     top: 30%;
     left: 30%;
     background-color: #FFF;
     z-index: 300;
     border-radius: 5px;
+
 }
 
-.autorisation__wrap {}
+.autorisation__wrap {
+    width: 320px;
+    height: 273px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
-.autorisation__title {}
+.autorisation__title {
+    font-weight: 600;
+    text-align: center;
 
-.autorisation__input-box {}
+}
+
+.autorisation__input-box{
+    margin-top: -7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.autorisation__input {
+    border-radius: 5px;
+    background: $light-grey;
+    width: 260px;
+    height: 40px;
+    margin-bottom: 10px;
+    padding-left: 21px;
+
+    &::placeholder {
+        background: $light-grey;
+        color: #707070;
+        font-size: 14px;
+    }
+}
 
 .autorisation__email {}
 
 .autorisation__password {}
 
-.autorisation__button {}
+.autorisation__button {
+    border-radius: 5px;
+    width: 260px;
+    height: 40px;
+background-color: $regular-green;
+}
 
-.autorisation__register {}
+.autorisation__register {
+    display: block;
+    text-decoration: underline;
+    font-weight: 500;
+    color: $regular-green;
+font-size: 12px;
+text-align: center;
+margin-top: -20px;
+}
 
 .header {
     background: url(../image/header/header.jpg) 60% 50% / cover no-repeat;
