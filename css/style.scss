@@ -5,6 +5,20 @@ $button-blue: #016CA8;
 $button-light-blue: #61B5E4;
 $light-grey: #F1F1F1;
 
+@mixin flex-column-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-row-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
 
 body {
     font-size: 16px;
@@ -19,22 +33,32 @@ body {
 }
 
 .autorisation {
-    position: fixed;
-    top: 30%;
-    left: 30%;
+    position: absolute;
+    visibility: hidden;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
     background-color: #FFF;
     z-index: 300;
     border-radius: 5px;
-
-}
-
-.autorisation__wrap {
     width: 320px;
     height: 273px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flex-column-center;
+}
+
+.autorisation__close {
+    background: url(../image/all/autorisation.svg);
+    position: absolute;
+    top: -26px;
+    right: 0;
+    width: 19px;
+    height: 19px;
+}
+
+.autorisation--open {
+    visibility: visible;
 }
 
 .autorisation__title {
@@ -43,14 +67,9 @@ body {
 
 }
 
-.autorisation__input-box{
+.autorisation__input-box {
+    @include flex-column-center;
     margin-top: -7px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-
 }
 
 .autorisation__input {
@@ -76,7 +95,7 @@ body {
     border-radius: 5px;
     width: 260px;
     height: 40px;
-background-color: $regular-green;
+    background-color: $regular-green;
 }
 
 .autorisation__register {
@@ -84,9 +103,11 @@ background-color: $regular-green;
     text-decoration: underline;
     font-weight: 500;
     color: $regular-green;
-font-size: 12px;
-text-align: center;
-margin-top: -20px;
+    font-size: 12px;
+    text-align: center;
+    line-height: 12px;
+    margin-top: 14px;
+    margin-bottom: 38px;
 }
 
 .header {
@@ -114,17 +135,14 @@ margin-top: -20px;
 
 
     @media (max-width:760px) {
+        @include flex-row-center;
         visibility: visible;
         display: block;
         width: 40px;
         height: 40px;
         background-color: white;
         border-radius: 5px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         cursor: pointer;
-        z-index: 200;
 
         &:hover {
             box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
@@ -135,6 +153,7 @@ margin-top: -20px;
 .burger--open {
     background: url(../image/header/burger-open.svg) 50% 50% no-repeat;
     background-color: white;
+    z-index: 30;
 }
 
 .overlay {
@@ -144,7 +163,7 @@ margin-top: -20px;
     bottom: 0;
     right: 0;
     background-color: rgba(30, 27, 27, 0.350);
-    z-index: 15;
+    z-index: 10;
     visibility: hidden;
     opacity: 0;
     transition: all 0.3s;
@@ -213,7 +232,7 @@ margin-top: -20px;
         right: 0;
         gap: 0;
         padding: 68px 100px;
-        z-index: 100;
+        z-index: 20;
         transform: translateY(-100%);
         transition: all 0.3s;
     }

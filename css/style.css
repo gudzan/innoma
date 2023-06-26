@@ -11,15 +11,16 @@ body {
 }
 
 .autorisation {
-  position: fixed;
-  top: 30%;
-  left: 30%;
+  position: absolute;
+  visibility: hidden;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
   background-color: #FFF;
   z-index: 300;
   border-radius: 5px;
-}
-
-.autorisation__wrap {
   width: 320px;
   height: 273px;
   display: flex;
@@ -28,18 +29,30 @@ body {
   align-items: center;
 }
 
+.autorisation__close {
+  background: url(../image/all/autorisation.svg);
+  position: absolute;
+  top: -26px;
+  right: 0;
+  width: 19px;
+  height: 19px;
+}
+
+.autorisation--open {
+  visibility: visible;
+}
+
 .autorisation__title {
   font-weight: 600;
   text-align: center;
 }
 
 .autorisation__input-box {
-  margin-top: -7px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  margin-top: -7px;
 }
 
 .autorisation__input {
@@ -75,7 +88,9 @@ body {
   color: #07AF91;
   font-size: 12px;
   text-align: center;
-  margin-top: -20px;
+  line-height: 12px;
+  margin-top: 14px;
+  margin-bottom: 38px;
 }
 
 .header {
@@ -105,17 +120,17 @@ body {
 }
 @media (max-width: 760px) {
   .burger {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     visibility: visible;
     display: block;
     width: 40px;
     height: 40px;
     background-color: white;
     border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     cursor: pointer;
-    z-index: 200;
   }
   .burger:hover {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
@@ -125,6 +140,7 @@ body {
 .burger--open {
   background: url(../image/header/burger-open.svg) 50% 50% no-repeat;
   background-color: white;
+  z-index: 30;
 }
 
 .overlay {
@@ -134,7 +150,7 @@ body {
   bottom: 0;
   right: 0;
   background-color: rgba(30, 27, 27, 0.35);
-  z-index: 15;
+  z-index: 10;
   visibility: hidden;
   opacity: 0;
   transition: all 0.3s;
@@ -205,7 +221,7 @@ body {
     right: 0;
     gap: 0;
     padding: 68px 100px;
-    z-index: 100;
+    z-index: 20;
     transform: translateY(-100%);
     transition: all 0.3s;
   }
