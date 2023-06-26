@@ -451,4 +451,61 @@ body {
 
 .button--green {
   background: #07AF91;
+}
+
+.first-section__services {
+  margin-top: 89px;
+}
+
+.services__title {
+  color: #1178B2;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 110px;
+}
+@media (max-width: 900px) {
+  .services__title {
+    text-align: center;
+  }
+}
+
+.services__block-content {
+  max-width: 674px;
+}
+
+.services__subtitle {
+  color: #1178B2;
+  white-space: nowrap;
+  font-size: 24px;
+  font-family: Inter;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.services__text {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
+.services__block-analytics {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 184px;
+}
+
+.services__block-online {
+  display: flex;
+  gap: 15px;
+  justify-content: space-around;
+  margin-bottom: 100px;
+}
+.services__block-online .services__block-content {
+  max-width: 604px;
+}
+
+.services__button {
+  width: 326px;
+  height: 70px;
 }/*# sourceMappingURL=style.css.map */
