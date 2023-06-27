@@ -19,13 +19,13 @@ $light-grey: #F1F1F1;
     align-items: center;
 }
 
-
 body {
     font-size: 16px;
     font-family: Montserrat, sans-serif;
     color: #000000;
     font-weight: 400;
     line-height: 80px;
+    overflow-x: hidden;
 }
 
 .body-not-scroll {
@@ -49,7 +49,7 @@ body {
 }
 
 .autorisation__close {
-    background: url(../image/all/autorisation.svg);
+    background: url(../image/autorisation/autorisation.svg);
     position: absolute;
     top: -26px;
     right: 0;
@@ -64,7 +64,6 @@ body {
 .autorisation__title {
     font-weight: 600;
     text-align: center;
-
 }
 
 .autorisation__input-box {
@@ -132,7 +131,6 @@ body {
     transition: all 0.2s;
     position: fixed;
     right: 20px;
-
 
     @media (max-width:760px) {
         @include flex-row-center;
@@ -470,14 +468,13 @@ body {
     font-size: 36px;
     font-weight: 700;
     margin-bottom: 110px;
+
     @media (max-width:900px) {
         text-align: center;
     }
 }
 
-.services__block {
-
-}
+.services__block {}
 
 .services__block-content {
     max-width: 674px;
@@ -499,20 +496,19 @@ body {
     margin-bottom: 20px;
 }
 
-.services__block-analytics{
+.services__block-analytics {
     display: flex;
-
-    justify-content: space-between; 
-    margin-bottom: 184px;   
+    justify-content: space-between;
+    margin-bottom: 184px;
 }
 
-.services__block-online{
+.services__block-online {
     display: flex;
-    
     gap: 15px;
     justify-content: space-around;
     margin-bottom: 100px;
-    .services__block-content{
+
+    .services__block-content {
         max-width: 604px;
     }
 }
@@ -528,6 +524,4 @@ body {
 
 .services__block-image {}
 
-.first-section__customers {
-
-}
+.first-section__customers {}
