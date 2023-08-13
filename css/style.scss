@@ -24,7 +24,7 @@ body {
     font-family: Montserrat, sans-serif;
     color: #000000;
     font-weight: 400;
-//line-height: 80px;
+    //line-height: 80px;
     overflow-x: hidden;
 }
 
@@ -739,10 +739,11 @@ h3 {
 
 .second-section__consultations {}
 
-.consultations__title-box{
+.consultations__title-box {
     text-align: center;
     padding: 0 30px;
 }
+
 .consultations__title {
     color: white;
     font-size: 40px;
@@ -757,9 +758,9 @@ h3 {
 
     @media (max-width:1440px) {
         display: inline;
-        width:100%;
+        width: 100%;
         align-content: center;
-        line-height:52px;
+        line-height: 52px;
         font-size: 36px;
         margin: 0;
     }
@@ -811,6 +812,7 @@ h3 {
     font-size: 20px;
     font-weight: 600;
     line-height: 80px;
+
     @media (max-width:900px) {
         width: 310px;
         font-size: 18px;
@@ -824,7 +826,93 @@ h3 {
     }
 }
 
-.third-section{
-    background-color: white;
-    height: 150px;
+.third-section {
+    //height: 150px;
+    margin-top: 100px;
 }
+
+.wrap {}
+
+.markets {}
+
+.third-section__markets {}
+
+.markets__title {
+    margin-bottom: 35px;
+}
+
+.markets__body {}
+
+.markets__country-box {}
+
+.markets__countries {
+    display: flex;
+
+}
+
+.markets__country {
+    color: #484848;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    line-height: 60px;
+    border-radius: 5px;
+    background: #EEF1F4;
+    width: 304px;
+    height: 70px;
+
+}
+
+.markets__country--active {
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    background: #88BBD8;
+    width: 304px;
+    height: 70px;
+}
+
+.markets__map-box {}
+
+.markets__map-info {}
+
+.markets__map-title {}
+
+.markets__map-text {}
+
+.markets__map-button-box {}
+
+.markets__map-button {}
+
+.markets__map-manager-box {}
+
+.markets__map-manager-photo {}
+
+.markets__map-manager-info {}
+
+.markets__map-manager-name {}
+
+.markets__map-manager-position {}
+
+.markets__map-table-box {}
+
+.markets__map-table {}
+
+.markets__map-item {}
+
+.markets__map-item--white {}
+
+.markets__map-item-number {}
+
+.markets__map-item-number-text {}
+
+.markets__map-item-text {}
+
+.markets__map-item-text--black {}
+
+.markets__map-item-blue {}
+
+.markets__map-item-icon {}
+
+.markets__map-item-text--white {}
