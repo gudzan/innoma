@@ -1,7 +1,7 @@
 body {
   font-size: 16px;
   font-family: Montserrat, sans-serif;
-  color: #000000;
+  color: black;
   font-weight: 400;
   overflow-x: hidden;
 }
@@ -870,4 +870,87 @@ h3 {
   background: #88BBD8;
   width: 304px;
   height: 70px;
+}
+
+.markets__map-box {
+  margin-top: 56px;
+  background-image: url(../image/all/map-svg.svg);
+  background-repeat: no-repeat;
+  background-position: 0px 31px;
+  display: flex;
+  gap: 167px;
+}
+
+.markets__map-info {
+  display: flex;
+  flex-direction: column;
+  gap: 29px;
+}
+
+.markets__map-title {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 41px;
+  text-transform: uppercase;
+}
+.markets__map-title span {
+  font-weight: 700;
+  color: #07AF91;
+}
+
+.markets__map-text {
+  line-height: 21.5px;
+}
+
+.markets__map-button {
+  width: 252px;
+  height: 70px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 70px;
+}
+
+.markets__map-manager-box {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.markets__map-manager-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.markets__map-manager-name {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.markets__map-manager-position {
+  color: #727272;
+  font-size: 14px;
+}
+
+.markets__map-table {
+  display: grid;
+  grid-template: repeat(2, auto)/repeat(2, auto);
+  gap: 20px;
+}
+
+.markets__map-item {
+  width: 289px;
+  height: 200px;
+}
+
+.markets__map-item--white {
+  background-color: white;
+}
+
+.markets__map-item-blue {
+  background-color: #1178B2;
+}
+
+.common-info {
+  height: 150px;
 }/*# sourceMappingURL=style.css.map */
