@@ -861,6 +861,11 @@ h3 {
   background: #EEF1F4;
   width: 304px;
   height: 70px;
+  cursor: pointer;
+  border-right: 1px solid #CFDDEB;
+}
+.markets__country:last-child {
+  border-right: none;
 }
 
 .markets__country--active {
@@ -938,17 +943,66 @@ h3 {
   gap: 20px;
 }
 
-.markets__map-item {
+.markets__map-item, .markets__map-item a {
   width: 289px;
   height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.09);
+  transition: all 0.3s;
+}
+
+.markets__map-item-link {
+  display: block;
 }
 
 .markets__map-item--white {
   background-color: white;
 }
 
+.markets__map-item-number {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+}
+
+.markets__map-item-number-n,
+.markets__map-item-number-text {
+  color: rgba(17, 120, 178, 0.5);
+  font-weight: 800;
+  line-height: 20px;
+  font-size: 48px;
+}
+
+.markets__map-item-number-n {
+  font-size: 48px;
+}
+
+.markets__map-item-number-text {
+  font-size: 24px;
+}
+
+.markets__map-item-text {
+  color: rgba(16, 16, 16, 0.5);
+  line-height: 20px;
+}
+
 .markets__map-item-blue {
   background-color: #1178B2;
+  cursor: pointer;
+}
+.markets__map-item-blue:hover {
+  background-color: #07AF91;
+}
+
+.markets__map-item-text--white {
+  color: white;
 }
 
 .common-info {
