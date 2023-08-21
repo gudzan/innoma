@@ -5,6 +5,9 @@ const overlay = document.querySelector('.overlay');
 const autorisationOpen = document.querySelector('.header__top-button');
 const autorisationClose = document.querySelector('.autorisation__close');
 const autorisationBlock = document.querySelector('.autorisation');
+const marketsCountries = document.querySelectorAll('.markets__country');
+const marketsCountriesBox = document.querySelectorAll('.markets__map-box');
+
 
 burger.addEventListener('click', toggleBurger);
 headerItems.forEach(item => {
@@ -13,6 +16,9 @@ headerItems.forEach(item => {
 overlay.addEventListener('click', closeAll);
 autorisationOpen.addEventListener('click', openAutorisation);
 autorisationClose.addEventListener('click', closeAutorisation);
+marketsCountries.forEach(item => {
+    item.addEventListener('click', toggleMarketsMap);
+});
 
 
 function openAutorisation() {
@@ -55,6 +61,27 @@ window.addEventListener('resize', function () {
         closeBurger();
     }
 });
+
+function toggleMarketsMap() {
+    marketsCountries.forEach(item => {
+        item.classList.remove('markets__country--active');
+    })
+    this.classList.add('markets__country--active');
+    document.querySelector('.markets__map-box--active').classList.toggle('markets__map-box--active');
+
+    if(this.classList.contains('markets__country-east')){
+        document.querySelector('.markets__map-box--east').classList.add('markets__map-box--active');
+    }
+    if(this.classList.contains('markets__country-asia')){
+        document.querySelector('.markets__map-box--asia').classList.add('markets__map-box--active');
+    }
+    if(this.classList.contains('markets__country-america')){
+        document.querySelector('.markets__map-box--america').classList.add('markets__map-box--active');
+    }
+    if(this.classList.contains('markets__country-africa')){
+        document.querySelector('.markets__map-box--africa').classList.add('markets__map-box--active');
+    }
+};
 
 window.addEventListener('scroll', function () {
     /*const scrollPosition = window.scrollY;

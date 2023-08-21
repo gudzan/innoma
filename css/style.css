@@ -838,7 +838,7 @@ h3 {
   }
 }
 
-.third-section {
+.third-section__markets {
   margin-top: 100px;
 }
 
@@ -863,6 +863,7 @@ h3 {
   height: 70px;
   cursor: pointer;
   border-right: 1px solid #CFDDEB;
+  transition: all 0.3s;
 }
 .markets__country:last-child {
   border-right: none;
@@ -875,21 +876,48 @@ h3 {
   background: #88BBD8;
   width: 304px;
   height: 70px;
+  transition: all 0.3s;
 }
 
 .markets__map-box {
   margin-top: 56px;
-  background-image: url(../image/all/map-svg.svg);
   background-repeat: no-repeat;
-  background-position: 0px 31px;
-  display: flex;
   gap: 167px;
+  visibility: hidden;
+  display: none;
+}
+
+.markets__map-box--active {
+  visibility: visible;
+  display: flex;
 }
 
 .markets__map-info {
   display: flex;
   flex-direction: column;
   gap: 29px;
+}
+
+.markets__map-box--east {
+  background-image: url(../image/all/map-svg.svg);
+  background-position: 0px 31px;
+}
+
+.markets__map-box--asia {
+  background-image: url(../image/all/map_asia.png);
+  background-position: 100px 30px;
+  background-size: 30%;
+}
+
+.markets__map-box--america {
+  background-image: url(../image/all/map_lat.png);
+  background-position: 115px 0px;
+  background-size: 30%;
+}
+
+.markets__map-box--africa {
+  background-image: url(../image/all/map_afr.png);
+  background-position: 115px 30px;
 }
 
 .markets__map-title {
@@ -943,7 +971,8 @@ h3 {
   gap: 20px;
 }
 
-.markets__map-item, .markets__map-item a {
+.markets__map-item,
+.markets__map-item a {
   width: 289px;
   height: 200px;
   display: flex;
@@ -1005,6 +1034,26 @@ h3 {
   color: white;
 }
 
-.common-info {
-  height: 150px;
+.third-section__common-info {
+  margin-top: 100px;
+}
+
+.common-info__title {
+  margin-bottom: 15px;
+}
+
+.common-info__text {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 30px;
+}
+
+.common-info__item-number {
+  font-family: Inter;
+  font-size: 120px;
+  font-weight: 800;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: linear-gradient(157deg, #8BD7DC 0%, #1246A9 100%);
 }/*# sourceMappingURL=style.css.map */
