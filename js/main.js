@@ -8,7 +8,6 @@ const autorisationBlock = document.querySelector('.autorisation');
 const marketsCountries = document.querySelectorAll('.markets__country');
 const marketsCountriesBox = document.querySelectorAll('.markets__map-box');
 
-
 burger.addEventListener('click', toggleBurger);
 headerItems.forEach(item => {
     item.addEventListener('click', toggleBurger);
@@ -56,6 +55,20 @@ function toggleBurger() {
     }
 };
 
+function playVideo() {
+    document.querySelector('.video__box-black').classList.remove('video__box-black--visibile');
+    document.querySelector('.video__box').classList.add('video__box--visible');
+    var iframe = document.querySelector('iframe');
+    var player = new Vimeo.Player(iframe);
+    player.play();
+};
+
+function toggleArrow(element) {
+    element.classList.toggle('program__accordion-title-arrow--active');
+
+};
+
+
 window.addEventListener('resize', function () {
     if (visualViewport.width > 760 && !autorisationBlock.classList.contains('autorisation--open')) {
         closeBurger();
@@ -82,6 +95,23 @@ function toggleMarketsMap() {
         document.querySelector('.markets__map-box--africa').classList.add('markets__map-box--active');
     }
 };
+
+const accordionTitle = document.querySelectorAll('.program__accordion-title');
+accordionTitle.forEach(accordionTitleItem => {
+    accordionTitleItem.addEventListener('click', function(e) {
+        e.preventDefault();
+        let content = accordionTitleItem.nextElementSibling;
+        if(content.classList.contains('program__accordion-content--active')){
+            content.style.maxHeight = null;
+        }
+        else{
+            content.style.maxHeight = content.scrollHeight + 'px';
+        }
+        content.classList.toggle('program__accordion-content--active');
+        let arrow = accordionTitleItem.lastElementChild;
+        arrow.classList.toggle('program__accordion-title-arrow--active');
+    })
+});
 
 window.addEventListener('scroll', function () {
     /*const scrollPosition = window.scrollY;
