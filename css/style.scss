@@ -1391,14 +1391,19 @@ h3 {
     position: relative;
 }
 
+.third-section__video{
+    height: auto;
+}
+
 .video__box {
     position: relative;
-    position: absolute;
-    top: 0;
-    left: 0;
+    //position: absolute;
+    //top: 0;
+    //left: 0;
     width: 100%;
     padding-top: 56.24%;
     visibility: hidden;
+    display: none;
 }
 
 .video__box iframe {
@@ -1412,6 +1417,7 @@ h3 {
 
 .video__box--visible {
     visibility: inherit;
+    display: flex;
 }
 
 .video__box-black {
@@ -1421,8 +1427,15 @@ h3 {
     padding-top: 56.24%;
     position: relative;
     border-radius: 10px;
-    visibility: visible;
+    visibility: hidden;
+    display: none;
 
+
+}
+
+.video__box-black--visibile {
+    visibility: inherit;
+    display: flex;
     @media (max-width:630px) {
         display: flex;
         flex-direction: column;
@@ -1434,10 +1447,6 @@ h3 {
         line-height: 0;
         padding: 20% 40px 20%;
     }
-}
-
-.video__box-black--visibile {
-    visibility: inherit;
 }
 
 .video__box-text {
@@ -1507,7 +1516,7 @@ h3 {
 .program__title {
     margin-top: 100px;
     margin-bottom: 20px;
-    line-height: 80px;
+    //line-height: 80px;
 }
 
 .program__accordion {}
@@ -1540,6 +1549,9 @@ h3 {
         flex-direction: column;
         text-align: center;
         padding: 16px 15px 0;
+        &:last-child{
+            padding-bottom: 16px;
+        }
     }
 }
 
@@ -1633,7 +1645,7 @@ h3 {
     }
 
     @media (max-width:500px) {
-        padding: 10% 15px 10% 30px;
+        padding: 5% 15px 5% 30px;
     }
 }
 
@@ -1665,20 +1677,26 @@ h3 {
     transition: 0.3s ease-in-out;
     overflow: hidden;
     max-height: 0;
+}
 
 
+.program__accordion-content--active {}
 
-    .program__accordion-content--active {}
 
+.program__button {
+    width: 377px;
+    height: 80px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 80px;
 
-    .program__button {
-        width: 377px;
-        height: 80px;
-        font-size: 18px;
-        font-weight: 600;
-        line-height: 80px;
+    @media (max-width:800px) {
+        display: none;
+        visibility: hidden;
     }
 
-    .fourth-section {
-        height: 150px;
-    }
+}
+
+.fourth-section {
+    height: 150px;
+}

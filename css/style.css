@@ -1428,14 +1428,16 @@ h3 {
   position: relative;
 }
 
+.third-section__video {
+  height: auto;
+}
+
 .video__box {
   position: relative;
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   padding-top: 56.24%;
   visibility: hidden;
+  display: none;
 }
 
 .video__box iframe {
@@ -1449,6 +1451,7 @@ h3 {
 
 .video__box--visible {
   visibility: inherit;
+  display: flex;
 }
 
 .video__box-black {
@@ -1458,10 +1461,16 @@ h3 {
   padding-top: 56.24%;
   position: relative;
   border-radius: 10px;
-  visibility: visible;
+  visibility: hidden;
+  display: none;
+}
+
+.video__box-black--visibile {
+  visibility: inherit;
+  display: flex;
 }
 @media (max-width: 630px) {
-  .video__box-black {
+  .video__box-black--visibile {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1472,10 +1481,6 @@ h3 {
     line-height: 0;
     padding: 20% 40px 20%;
   }
-}
-
-.video__box-black--visibile {
-  visibility: inherit;
 }
 
 .video__box-text {
@@ -1542,7 +1547,6 @@ h3 {
 .program__title {
   margin-top: 100px;
   margin-bottom: 20px;
-  line-height: 80px;
 }
 
 .program__accordion-item {
@@ -1570,6 +1574,9 @@ h3 {
     flex-direction: column;
     text-align: center;
     padding: 16px 15px 0;
+  }
+  .program__accordion-title:last-child {
+    padding-bottom: 16px;
   }
 }
 
@@ -1668,9 +1675,15 @@ h3 {
 @media (max-width: 600px) {
   .program__accordion-topic {
     font-size: 12px;
-    padding: 3% 15px 3% 30px;
+    padding: 4% 15px 4% 30px;
   }
 }
+@media (max-width: 500px) {
+  .program__accordion-topic {
+    padding: 5% 15px 5% 30px;
+  }
+}
+
 .program__accordion-link {
   color: #2A79C2;
   cursor: pointer;
@@ -1688,7 +1701,7 @@ h3 {
 @media (max-width: 600px) {
   .program__accordion-link {
     font-size: 12px;
-    padding: 3% 15px 3% 30px;
+    padding: 4% 15px 4% 30px;
   }
 }
 @media (max-width: 500px) {
@@ -1703,9 +1716,6 @@ h3 {
   overflow: hidden;
   max-height: 0;
 }
-.program__accordion-content:first-child {
-  border-right: none;
-}
 
 .program__button {
   width: 377px;
@@ -1713,6 +1723,12 @@ h3 {
   font-size: 18px;
   font-weight: 600;
   line-height: 80px;
+}
+@media (max-width: 800px) {
+  .program__button {
+    display: none;
+    visibility: hidden;
+  }
 }
 
 .fourth-section {
