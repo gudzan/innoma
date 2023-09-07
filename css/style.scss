@@ -1269,7 +1269,6 @@ h3 {
 }
 
 .common-info__box {
-    //@include flex-row-center();
     display: grid;
     grid-template: repeat(1, 1fr)/repeat(3, 1fr);
     height: 284px;
@@ -1289,8 +1288,6 @@ h3 {
     @media (max-width:500px) {
         height: 450px;
     }
-
-
 }
 
 .common-info__item {
@@ -1307,7 +1304,7 @@ h3 {
         padding-left: 10%;
         padding-right: 5px;
         justify-content: start;
-        gap:20px;
+        gap: 20px;
     }
 
     @media (max-width:360px) {
@@ -1346,7 +1343,7 @@ h3 {
     font-size: 20px;
     font-weight: 500;
 
-    br{
+    br {
         display: none;
     }
 
@@ -1356,13 +1353,13 @@ h3 {
     }
 
     @media (max-width:830px) {
-        br{
+        br {
             display: inline-block;
         }
     }
 
     @media (max-width:670px) {
-        br{
+        br {
             display: none;
         }
     }
@@ -1372,7 +1369,7 @@ h3 {
     }
 
     @media (max-width:360px) {
-        br{
+        br {
             display: inline-block;
         }
     }
@@ -1426,6 +1423,17 @@ h3 {
     border-radius: 10px;
     visibility: visible;
 
+    @media (max-width:630px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        left: 0;
+        gap: 20px;
+        line-height: 0;
+        padding: 20% 40px 20%;
+    }
 }
 
 .video__box-black--visibile {
@@ -1441,6 +1449,23 @@ h3 {
     font-size: 20px;
     font-weight: 600;
     line-height: 60px;
+
+    @media (max-width:1000px) {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    @media (max-width:730px) {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    @media (max-width:630px) {
+        position: relative;
+        transform:none;
+        top: 0;
+        left: 0;
+    }
 }
 
 .video__box-button-play {
@@ -1451,6 +1476,27 @@ h3 {
 
     img {
         cursor: pointer;
+    }
+
+    @media (max-width:1000px) {
+        img {
+            height: 89px;
+            width: 89px;
+        }
+    }
+
+    @media (max-width:730px) {
+        img {
+            width: 63px;
+            height: 63px;
+        }
+    }
+
+    @media (max-width:630px) {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
     }
 }
 
