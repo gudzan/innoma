@@ -105,7 +105,7 @@ accordionTitle.forEach(accordionTitleItem => {
             content.style.maxHeight = null;
         }
         else{
-            content.style.maxHeight = content.scrollHeight + 'px';
+            content.style.maxHeight = '360px';
         }
         content.classList.toggle('program__accordion-content--active');
         let arrow = accordionTitleItem.lastElementChild;
