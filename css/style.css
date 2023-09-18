@@ -2487,8 +2487,20 @@ h3 {
   margin-top: 125px;
 }
 
+.fifth-section__gallery {
+  margin-top: 100px;
+}
+
 .gallery {
-  display: none;
+  overflow: hidden;
+}
+
+.swiper-slide, .gallery__item {
+  width: 228px;
+}
+.swiper-slide img, .gallery__item img {
+  border-radius: 10px;
+  width: 100%;
 }
 
 .sixth-section {

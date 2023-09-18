@@ -115,5 +115,17 @@ accordionTitle.forEach(accordionTitleItem => {
 
 window.addEventListener('scroll', function () {
     /*const scrollPosition = window.scrollY;
-  console.log(scrollPosition);*/
+    console.log(scrollPosition);*/
+});
+
+new Swiper(".gallery__box",{
+    slidesPerView: 5,
+    spaceBetween: 9,
+    //loop: true,
+    watchSlidesProgress: false,
+    autoHeight:true,
+    mousewheel: true,
+    mousewheel:{
+        sensitivity:1
+    }
 });
