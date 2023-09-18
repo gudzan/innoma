@@ -122,10 +122,7 @@ new Swiper(".gallery__box",{
     slidesPerView: 5,
     spaceBetween: 9,
     freeMode:true,
-    //loop: true,
     watchSlidesProgress: false,
-    //autoHeight:true,
-    mousewheel: false,
     breakpoints:{
         300:{
             slidesPerView: 2,
