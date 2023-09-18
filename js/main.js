@@ -121,11 +121,24 @@ window.addEventListener('scroll', function () {
 new Swiper(".gallery__box",{
     slidesPerView: 5,
     spaceBetween: 9,
+    freeMode:true,
     //loop: true,
     watchSlidesProgress: false,
-    autoHeight:true,
-    mousewheel: true,
-    mousewheel:{
-        sensitivity:1
-    }
+    //autoHeight:true,
+    mousewheel: false,
+    breakpoints:{
+        300:{
+            slidesPerView: 2,
+        },
+        550:{
+            slidesPerView: 3,
+        },
+        800:{
+            freeMode:false,
+            slidesPerView: 4,
+        },
+        1000:{
+            slidesPerView: 5,
+        }
+    },
 });

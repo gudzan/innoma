@@ -2423,17 +2423,23 @@ h3 {
     margin-top: 100px;
 }
 .gallery{
-
     overflow: hidden;
 }
 
 
-.swiper-slide , .gallery__item{
+.swiper-slide {
     width: 228px;
+    //height: 157px;
     img {
         border-radius: 10px;
         width: 100%;
+        //height: auto;
     }
+
+    @media (max-width:1000px) {
+    }
+
+
 }
 
 .sixth-section {

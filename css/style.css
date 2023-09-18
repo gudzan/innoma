@@ -2495,14 +2495,13 @@ h3 {
   overflow: hidden;
 }
 
-.swiper-slide, .gallery__item {
+.swiper-slide {
   width: 228px;
 }
-.swiper-slide img, .gallery__item img {
+.swiper-slide img {
   border-radius: 10px;
   width: 100%;
 }
-
 .sixth-section {
   height: 500px;
 }/*# sourceMappingURL=style.css.map */
