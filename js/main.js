@@ -33,7 +33,7 @@ function closeAutorisation() {
 };
 
 function closeAll() {
-    if(overlay.classList.contains('overlay--open')){
+    if (overlay.classList.contains('overlay--open')) {
         closeBurger();
         closeAutorisation();
     }
@@ -82,29 +82,29 @@ function toggleMarketsMap() {
     this.classList.add('markets__country--active');
     document.querySelector('.markets__map-box--active').classList.toggle('markets__map-box--active');
 
-    if(this.classList.contains('markets__country-east')){
+    if (this.classList.contains('markets__country-east')) {
         document.querySelector('.markets__map-box--east').classList.add('markets__map-box--active');
     }
-    if(this.classList.contains('markets__country-asia')){
+    if (this.classList.contains('markets__country-asia')) {
         document.querySelector('.markets__map-box--asia').classList.add('markets__map-box--active');
     }
-    if(this.classList.contains('markets__country-america')){
+    if (this.classList.contains('markets__country-america')) {
         document.querySelector('.markets__map-box--america').classList.add('markets__map-box--active');
     }
-    if(this.classList.contains('markets__country-africa')){
+    if (this.classList.contains('markets__country-africa')) {
         document.querySelector('.markets__map-box--africa').classList.add('markets__map-box--active');
     }
 };
 
 const accordionTitle = document.querySelectorAll('.program__accordion-title');
 accordionTitle.forEach(accordionTitleItem => {
-    accordionTitleItem.addEventListener('click', function(e) {
+    accordionTitleItem.addEventListener('click', function (e) {
         e.preventDefault();
         let content = accordionTitleItem.nextElementSibling;
-        if(content.classList.contains('program__accordion-content--active')){
+        if (content.classList.contains('program__accordion-content--active')) {
             content.style.maxHeight = null;
         }
-        else{
+        else {
             content.style.maxHeight = '360px';
         }
         content.classList.toggle('program__accordion-content--active');
@@ -118,24 +118,49 @@ window.addEventListener('scroll', function () {
     console.log(scrollPosition);*/
 });
 
-new Swiper(".gallery__box",{
+new Swiper(".gallery__box", {
     slidesPerView: 5,
-    spaceBetween: 9,
-    freeMode:true,
+    spaceBetween: 30,
+    freeMode: true,
     watchSlidesProgress: false,
-    breakpoints:{
-        300:{
+    breakpoints: {
+        300: {
             slidesPerView: 2,
         },
-        550:{
+        550: {
             slidesPerView: 3,
         },
-        800:{
-            freeMode:false,
+        800: {
+            freeMode: false,
             slidesPerView: 4,
         },
-        1000:{
+        1000: {
             slidesPerView: 5,
+        }
+    },
+});
+
+new Swiper(".experts__body", {
+    slidesPerView: 4,
+    spaceBetween: 9,
+    watchSlidesProgress: false,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+    },
+    freeMode: true,
+    breakpoints: {
+        300: {
+            slidesPerView: 1,
+        },
+        650: {
+            slidesPerView: 2,
+        },
+        900: {
+            slidesPerView: 3,
+        },
+        1200: {
+            slidesPerView: 4,
         }
     },
 });
