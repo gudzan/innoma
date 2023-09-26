@@ -2762,6 +2762,123 @@ h3 {
   }
 }
 
-.seventh-section {
+.seventh-section__events {
+  margin-top: 100px;
+}
+
+.events__title {
+  margin-bottom: 35px;
+}
+
+.events__list {
+  display: grid;
+  grid-template: repeat(1, auto)/repeat(3, 1fr);
+  gap: 20px;
+}
+@media (max-width: 700px) {
+  .events__list {
+    grid-template: repeat(3, auto)/repeat(1, auto);
+  }
+}
+
+.events__item {
+  position: relative;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.09);
+}
+@media (max-width: 700px) {
+  .events__item {
+    display: grid;
+    grid-template: repeat(1, auto)/repeat(2, auto);
+  }
+}
+
+.events__image img {
+  border-radius: 10px 10px 0px 0px;
+  width: 100%;
+}
+@media (max-width: 700px) {
+  .events__image img {
+    transform: rotate(-90deg);
+    width: 171px;
+    height: 86px;
+  }
+}
+
+.events__bogy {
+  padding: 20px 10px 0px 30px;
+}
+@media (max-width: 800px) {
+  .events__bogy {
+    padding: 20px 10px 0px 10px;
+  }
+}
+
+.events__item-title {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 25px;
+  margin-bottom: 10px;
+}
+@media (max-width: 800px) {
+  .events__item-title {
+    font-size: 14px;
+  }
+}
+@media (max-width: 400px) {
+  .events__item-title {
+    font-size: 12px;
+  }
+}
+
+.events__item-text {
+  font-size: 16px;
+  line-height: 25px;
+  margin-bottom: 85px;
+}
+@media (max-width: 800px) {
+  .events__item-text {
+    font-size: 12px;
+    margin-bottom: 70px;
+  }
+}
+@media (max-width: 400px) {
+  .events__item-text {
+    font-size: 10px;
+    line-height: 18px;
+  }
+}
+
+.events__item-date {
+  position: absolute;
+  left: 30px;
+  bottom: 25px;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 25px;
+}
+@media (max-width: 800px) {
+  .events__item-date {
+    font-size: 10px;
+    left: 10px;
+    bottom: 10px;
+  }
+}
+@media (max-width: 700px) {
+  .events__item-date {
+    font-size: 10px;
+    position: relative;
+    left: 0;
+    bottom: 0;
+  }
+}
+@media (max-width: 400px) {
+  .events__item-date {
+    font-size: 10px;
+  }
+}
+
+.eighth-section {
   height: 500px;
 }/*# sourceMappingURL=style.css.map */
