@@ -2790,7 +2790,14 @@ h3 {
 @media (max-width: 700px) {
   .events__item {
     display: grid;
-    grid-template: repeat(1, auto)/repeat(2, auto);
+    grid-template: repeat(1, auto)/repeat(1, 86px auto);
+    height: 171px;
+  }
+}
+@media (max-width: 330px) {
+  .events__item {
+    height: 137px;
+    grid-template: repeat(1, auto)/repeat(1, 68px auto);
   }
 }
 
@@ -2800,9 +2807,16 @@ h3 {
 }
 @media (max-width: 700px) {
   .events__image img {
-    transform: rotate(-90deg);
     width: 171px;
     height: 86px;
+    transform: translateY(50%) translateX(-25%) rotate(-90deg);
+  }
+}
+@media (max-width: 330px) {
+  .events__image img {
+    width: 137px;
+    height: 68px;
+    transform: translateY(50%) translateX(-25%) rotate(-90deg);
   }
 }
 
@@ -2811,7 +2825,12 @@ h3 {
 }
 @media (max-width: 800px) {
   .events__bogy {
-    padding: 20px 10px 0px 10px;
+    padding: 20px 10px 0px 20px;
+  }
+}
+@media (max-width: 330px) {
+  .events__bogy {
+    padding: 10px 10px 20px 10px;
   }
 }
 
@@ -2826,9 +2845,11 @@ h3 {
     font-size: 14px;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 700px) {
   .events__item-title {
     font-size: 12px;
+    margin-bottom: 5px;
+    line-height: 19px;
   }
 }
 
@@ -2843,8 +2864,9 @@ h3 {
     margin-bottom: 70px;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 700px) {
   .events__item-text {
+    margin-bottom: 20px;
     font-size: 10px;
     line-height: 18px;
   }
@@ -2867,15 +2889,14 @@ h3 {
 }
 @media (max-width: 700px) {
   .events__item-date {
-    font-size: 10px;
-    position: relative;
-    left: 0;
-    bottom: 0;
+    left: 106px;
+    bottom: 10px;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 330px) {
   .events__item-date {
-    font-size: 10px;
+    left: 78px;
+    bottom: 5px;
   }
 }
 
