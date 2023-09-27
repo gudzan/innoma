@@ -1736,18 +1736,18 @@ h3 {
   }
 }
 
-.investors {
+.backgroung-blue {
   width: 100%;
   height: 500px;
   background: url(../image/all/white-background.svg) repeat, linear-gradient(138deg, #1973FA -12.19%, #75ACFD 92.47%);
 }
 @media (max-width: 880px) {
-  .investors {
+  .backgroung-blue {
     height: 1000px;
   }
 }
 @media (max-width: 500px) {
-  .investors {
+  .backgroung-blue {
     height: 750px;
   }
 }
@@ -2764,6 +2764,7 @@ h3 {
 
 .seventh-section__events {
   margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 .events__title {
@@ -2898,8 +2899,4 @@ h3 {
     left: 78px;
     bottom: 5px;
   }
-}
-
-.eighth-section {
-  height: 500px;
 }/*# sourceMappingURL=style.css.map */
