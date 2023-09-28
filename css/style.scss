@@ -1698,7 +1698,7 @@ h3 {
     }
 }
 
-.backgroung-blue{
+.backgroung-blue {
     width: 100%;
     height: 500px;
     background: url(../image/all/white-background.svg) repeat, linear-gradient(138deg, #1973FA -12.19%, #75ACFD 92.47%);
@@ -2817,6 +2817,114 @@ h3 {
     }
 }
 
-.eighth-section {
-    //height: 500px;
+.eighth-section {}
+
+.communication {
+    height: 100%;
+}
+
+.eighth-section__communication {}
+
+.communication__box {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.communication__question {}
+
+.communication__title {
+    color: #FFF;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 60px;
+
+    @media (max-width:800px) {
+        text-align: center;
+    }
+
+    @media (max-width:400px) {
+        font-size: 24px;
+    }
+}
+
+.communication__text {
+    color: #FFF;
+    font-size: 18px;
+    line-height: 40px;
+
+    @media (max-width:800px) {
+        text-align: center;
+        font-size: 16px;
+    }
+
+    @media (max-width:400px) {
+        font-size: 14px;
+        line-height: 27.5px;
+    }
+}
+
+.communication__cta {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 60px;
+
+    @media (max-width:800px) {
+        text-align: center;
+        font-size: 18px;
+    }
+
+    @media (max-width:400px) {
+        font-size: 16px;
+    }
+}
+
+.communication__icon-box {}
+
+.communication__icon-list {}
+
+.communication__icon-item {}
+
+.communication__icon {}
+
+.communication__icon-text {
+    color: #FFF;
+    font-size: 20px;
+    line-height: 60px;
+
+    @media (max-width:800px) {
+        font-size: 18px;
+    }
+    
+    @media (max-width:400px) {
+        text-align: center;
+        font-size: 16px;
+    }
+}
+
+.communication__form {
+    margin-right: 16px;
+    height: 340px;
+    @include flex-row-center();
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.25);
+}
+
+.communication__input-box {}
+
+.communication__name {}
+
+.communication__input {}
+
+.communication__email {}
+
+.communication__tel {}
+
+.communication__button {}
+
+.footer {
+    height: 500px;
 }
