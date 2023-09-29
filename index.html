@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/css/intlTelInput.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
@@ -994,18 +995,22 @@
                         <div class="communication__cta">Или напишите нам:</div>
                         <div class="communication__icon-box">
                             <ul class="communication__icon-list">
-                                <li class="communication__icon-item">
-                                    <div class="communication__icon">
-                                        <img src="image/all/telega.svg" alt="">
-                                    </div>
-                                    <div class="communication__icon-text">Telegram</div>
-                                </li>
-                                <li class="communication__icon-item">
-                                    <div class="communication__icon">
-                                        <img src="image/all/whats.svg" alt="">
-                                    </div>
-                                    <div class="communication__icon-text">Whatsapp</div>
-                                </li>
+                                <a href="#">
+                                    <li class="communication__icon-item">
+                                        <div class="communication__icon">
+                                            <img src="image/all/telega.svg" alt="">
+                                        </div>
+                                        <div class="communication__icon-text">Telegram</div>
+                                    </li>
+                                </a>
+                                <a href="#">
+                                    <li class="communication__icon-item">
+                                        <div class="communication__icon">
+                                            <img src="image/all/whats.svg" alt="">
+                                        </div>
+                                        <div class="communication__icon-text">Whatsapp</div>
+                                    </li>
+                                </a>
                             </ul>
                         </div>
                     </div>
@@ -1016,8 +1021,8 @@
                                     id="form-name" placeholder="Имя" required>
                                 <input class="communication__email communication__input" type="email" name="email"
                                     id="form-email" placeholder="Почта" required>
-                                <input class="communication__tel communication__input" type="tel" name="tel"
-                                    id="form-tel" required>
+                                <input class="communication__tel communication__input" id="phone" type="tel" name="tel"
+                                    id="form-tel"  required>
                             </div>
                             <input class="communication__button button button--green" type="submit"
                                 value="Оставить заявку">
@@ -1027,11 +1032,37 @@
             </div>
         </section>
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer">
+        <div class="footer__image-blackout">
+            <div class="footer__box wrap">
+                <div class="footer__logo-box">
+                    <a href="" class="footer__logo logo">INNOMA.<span>VC</span></a>
+                    <div class="footer__logo-text">Все права защищены</div>
+                </div>
+                <ul class="footer__menu-list menu">
+                    <li class="footer__menu-item menu__item"><a class="menu__item-link">Кто мы?</a></li>
+                    <li class="footer__menu-item menu__item"><a class="menu__item-link">Услуги</a></li>
+                    <li class="footer__menu-item menu__item"><a class="menu__item-link">Акселератор</a></li>
+                    <li class="footer__menu-item menu__item"><a class="menu__item-link">Новости</a></li>
+                </ul>
+                <div class="footer__contacts">
+                    <div class="footer__contacts-address">Dubai, Single Business<br>Tower 1503, Business Bay</div>
+                    <a href="" class="footer__contacts-mail">Sales@innoma.vc</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 </body>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/intlTelInput.min.js"></script>
+<script>
+    const input = document.querySelector("#phone");
+    window.intlTelInput(input, {
+        utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js",
+    });
+</script>
 <script src="js/main.js"></script>
 
 </html>
