@@ -165,8 +165,8 @@ new Swiper(".experts__body", {
     },
 });
 
-const input = document.querySelector("#phone");
-window.intlTelInput(input, {
+const inpuut = document.querySelector("#phone");
+window.intlTelInput(inpuut, {
     initialCountry: "auto",
     geoIpLookup: callback => {
         fetch("https://ipapi.co/json")
